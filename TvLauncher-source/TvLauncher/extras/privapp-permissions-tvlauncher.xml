@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Destino no aparelho: /system/etc/permissions/privapp-permissions-tvlauncher.xml -->
+<permissions>
+    <privapp-permissions package="com.example.tvlauncher">
+        <permission name="com.android.providers.tv.permission.READ_EPG_DATA" />
+    </privapp-permissions>
+</permissions>

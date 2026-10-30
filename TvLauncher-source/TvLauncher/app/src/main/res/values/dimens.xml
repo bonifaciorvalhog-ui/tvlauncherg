@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Margens: 58dp nas laterais, como na referência (43 px em 703 px) -->
+    <dimen name="overscan_horizontal">58dp</dimen>
+    <dimen name="overscan_vertical">27dp</dimen>
+
+    <dimen name="top_bar_height">90dp</dimen>
+    <dimen name="hero_height">210dp</dimen>
+
+    <!-- Fileira de apps favoritos: 16:9 -->
+    <dimen name="card_app_width">96dp</dimen>
+    <dimen name="card_app_height">54dp</dimen>
+    <!-- Grade da aba Apps -->
+    <dimen name="card_app_grid_width">192dp</dimen>
+    <dimen name="card_app_grid_height">108dp</dimen>
+    <!-- Fileiras de conteúdo: 16:9 -->
+    <dimen name="card_media_width">204dp</dimen>
+    <dimen name="card_media_height">115dp</dimen>
+
+    <dimen name="row_gap">11dp</dimen>
+    <dimen name="row_title_height">14dp</dimen>
+</resources>

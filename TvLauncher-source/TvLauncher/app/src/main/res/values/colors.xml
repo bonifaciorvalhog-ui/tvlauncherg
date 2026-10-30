@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Home (valores medidos na referência: fundo #051226) -->
+    <color name="home_background">#FF051226</color>
+    <color name="home_text_primary">#FFFFFFFF</color>
+    <color name="home_text_secondary">#FF9AA0A6</color>
+    <color name="home_label">#FFE8EAED</color>
+    <color name="home_clock">#CCFFFFFF</color>
+    <color name="home_focus_fill">#33FFFFFF</color>
+    <color name="card_background">#FF1E252B</color>
+
+    <!-- Setup -->
+    <color name="setup_card_bg">#1AFFFFFF</color>
+    <color name="setup_focus_bg">#FFEEEEEE</color>
+    <color name="setup_idle_text">#FF9AA0A6</color>
+    <color name="setup_idle_title">#FFBDC1C6</color>
+    <color name="setup_focus_text">#FF202124</color>
+    <color name="setup_focus_text_secondary">#FF5F6368</color>
+</resources>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Ordem de empilhamento: listas → degradê → barra superior (a arte do destaque passa por trás da barra). -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_background"
+    tools:targetApi="o">
+
+    <androidx.leanback.widget.VerticalGridView
+        android:id="@+id/rows"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/overscan_vertical"
+        app:focusOutFront="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.leanback.widget.VerticalGridView
+        android:id="@+id/appGrid"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:paddingStart="@dimen/overscan_horizontal"
+        android:paddingTop="100dp"
+        android:paddingEnd="@dimen/overscan_horizontal"
+        android:paddingBottom="@dimen/overscan_vertical"
+        android:visibility="gone"
+        app:focusOutFront="true"
+        app:horizontalMargin="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:numberOfColumns="4"
+        app:verticalMargin="24dp" />
+
+    <!-- Aparece (alpha 0→1) conforme o destaque sai da tela. -->
+    <View
+        android:id="@+id/topScrim"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:alpha="0"
+        android:background="@drawable/scrim_top"
+        android:focusable="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/topBar"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/top_bar_height"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/overscan_horizontal"
+        android:paddingEnd="@dimen/overscan_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tabSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_tab"
+            android:defaultFocusHighlightEnabled="false"
+            android:drawableStart="@drawable/ic_search"
+            android:drawablePadding="9dp"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:nextFocusDown="@id/rows"
+            android:text="@string/search"
+            android:textColor="@color/home_tab_text"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tabHome"
+            style="@style/HomeTab"
+            android:text="@string/tab_home" />
+
+        <TextView
+            android:id="@+id/tabDiscover"
+            style="@style/HomeTab"
+            android:text="@string/tab_discover" />
+
+        <TextView
+            android:id="@+id/tabApps"
+            style="@style/HomeTab"
+            android:text="@string/tab_apps" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <!-- Engrenagem e relógio ficam ~3dp abaixo do eixo das abas (referência: y 36 px vs 33 px). -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="6dp">
+
+            <ImageButton
+                android:id="@+id/btnSettings"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/bg_top_button"
+                android:contentDescription="@string/settings"
+                android:defaultFocusHighlightEnabled="false"
+                android:focusable="true"
+                android:nextFocusDown="@id/rows"
+                android:padding="9dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_settings" />
+
+            <TextClock
+                android:id="@+id/clock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:format12Hour="h:mm"
+                android:format24Hour="H:mm"
+                android:textColor="@color/home_clock"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

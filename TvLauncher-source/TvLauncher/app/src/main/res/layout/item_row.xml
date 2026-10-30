@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Título 14dp + 8dp + cartões + 17dp: apps = 93dp, mídia = 154dp (referência: 303 e 457 dp). -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:focusable="false"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/rowTitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/row_title_height"
+        android:ellipsize="end"
+        android:focusable="false"
+        android:gravity="center_vertical"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:paddingStart="@dimen/overscan_horizontal"
+        android:paddingEnd="@dimen/overscan_horizontal"
+        android:textColor="@color/home_label"
+        android:textSize="12sp" />
+
+    <androidx.leanback.widget.HorizontalGridView
+        android:id="@+id/rowList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:paddingStart="@dimen/overscan_horizontal"
+        android:paddingTop="8dp"
+        android:paddingEnd="@dimen/overscan_horizontal"
+        android:paddingBottom="17dp"
+        app:horizontalMargin="@dimen/row_gap" />
+
+</LinearLayout>

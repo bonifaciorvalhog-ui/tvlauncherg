@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Esquerda sólida (fundo) → transparente: a arte do destaque surge da direita. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:angle="0"
+        android:centerColor="#99051226"
+        android:endColor="#00051226"
+        android:startColor="#FF051226" />
+</shape>

@@ -1,0 +1,4 @@
+## Copie para local.properties (não versionar).
+sdk.dir=/caminho/para/Android/Sdk
+# Chave v3 do TMDB (https://www.themoviedb.org/settings/api). Fica embutida no APK, sem tela de entrada.
+TMDB_API_KEY=

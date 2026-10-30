@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="app_name">Android TV Launcher</string>
+
+    <!-- Home -->
+    <string name="search">Pesquisar</string>
+    <string name="settings">Configurações</string>
+    <string name="tab_home">Início</string>
+    <string name="tab_discover">Descobrir</string>
+    <string name="tab_apps">Apps</string>
+    <string name="apps_row">Apps favoritos</string>
+    <string name="watch_next">Assistir a seguir</string>
+    <string name="app_unavailable">Aplicativo indisponível</string>
+    <string name="trending_on">Em alta · %1$s</string>
+    <string name="type_movie">Filme</string>
+    <string name="type_series">Série</string>
+    <string name="hero_trending">Em alta</string>
+    <string name="hero_available">Disponível em %1$s</string>
+
+    <!-- Assistente de configuração -->
+    <string name="setup_brand">Android TV</string>
+    <string name="setup_welcome_title">Bem-vindo</string>
+    <string name="setup_region_title">Sua região</string>
+    <string name="setup_region_desc">Usada para mostrar o que está em alta onde você mora.</string>
+    <string name="setup_terms_title">Termos e condições</string>
+    <string name="setup_terms_desc">Selecione cada item para saber mais. Ao escolher Aceitar e continuar, você concorda com os Termos de uso e a Política de privacidade e confirma as opções abaixo.</string>
+    <string name="setup_accept">Aceitar e continuar</string>
+    <string name="setup_recs_title">Recomendações de filmes e séries</string>
+    <string name="setup_recs_desc">Busca sugestões no TMDB usando apenas seu idioma e região. Nenhum dado pessoal é enviado.</string>
+    <string name="setup_doc_terms_title">Termos de uso</string>
+    <string name="setup_doc_terms_desc">Condições para usar este launcher.</string>
+    <string name="setup_doc_privacy_title">Política de privacidade</string>
+    <string name="setup_doc_privacy_desc">Quais dados são usados e para quê.</string>
+    <string name="setup_doc_credits_title">Créditos e atribuições</string>
+    <string name="setup_doc_credits_desc">TMDB, JustWatch e marcas de terceiros.</string>
+    <string name="setup_doc_close">Entendi</string>
+    <string name="setup_done_title">Tudo pronto</string>
+    <string name="setup_done_summary">Idioma: %1$s\nRegião: %2$s\nRecomendações: %3$s\nLauncher padrão: %4$s</string>
+    <string name="setup_on">ativadas</string>
+    <string name="setup_off">desativadas</string>
+    <string name="setup_yes">sim</string>
+    <string name="setup_no">não</string>
+    <string name="setup_set_default">Definir como padrão</string>
+    <string name="setup_finish">Concluir e abrir</string>
+
+    <!-- Textos legais: MODELO. Revise com um profissional antes de distribuir. -->
+    <string-array name="setup_terms_paragraphs">
+        <item>Este launcher é fornecido no estado em que se encontra, sem garantias de qualquer tipo.</item>
+        <item>Você é responsável pelos aplicativos que instala e executa a partir dele.</item>
+        <item>Marcas, logotipos e imagens de aplicativos e de serviços de streaming pertencem aos seus respectivos titulares.</item>
+        <item>O desenvolvedor pode alterar estes termos; quando isso acontecer, o aceite será solicitado novamente.</item>
+    </string-array>
+    <string-array name="setup_privacy_paragraphs">
+        <item>Este launcher não exige conta e não coleta dados pessoais para o desenvolvedor.</item>
+        <item>A lista de aplicativos instalados é lida apenas no aparelho e nunca é enviada para fora dele.</item>
+        <item>Se as recomendações estiverem ativadas, o launcher consulta o TMDB enviando apenas o idioma e a região escolhidos, além do endereço IP inerente a qualquer conexão.</item>
+        <item>Pôsteres e imagens são baixados dos servidores de imagens do TMDB.</item>
+    </string-array>
+    <string-array name="setup_credits_paragraphs">
+        <item>This product uses the TMDB API but is not endorsed or certified by TMDB.</item>
+        <item>Streaming availability data provided by JustWatch via TMDB.</item>
+        <item>Netflix, Prime Video, Disney+, YouTube e demais marcas pertencem aos seus respectivos titulares. O launcher apenas abre os aplicativos já instalados no aparelho.</item>
+    </string-array>
+</resources>
